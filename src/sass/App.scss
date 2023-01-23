@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --font-base: 'Cormorant Upright', serif;
+  --font-alt: 'Open Sans', sans-serif;
+  --color-golden: #DCCA87;
+  --color-black: #0C0C0C;
+  --color-gray: #545454;
+  --color-grey: #AAAAAA;
+  --color-white: #FFFFFF;
+  --main-transition: .3s;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-base) !important;
+  background-color: var(--color-black);
+}
+
+a {
+  text-decoration: none !important;
+}
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+::selection {
+  background-color: var(--color-golden);
+  color: var(--color-black);
+}
+
+.section_padding {
+  padding: 80px 0;
+}
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app_bg {
+  background: url('../assets/bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+.custom_button {
+  background-color: var(--color-golden);
+  color: var(--color-black);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 13px 19px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.custom_button:hover {
+  background-color: rgb(220 202 135 / 70%);
+}
+.info_text {
+  color: var(--color-grey);
+  margin-bottom: 25px;
+  line-height: 1.7;
+  font-family: var(--font-alt);
+  text-transform: capitalize;
+}
